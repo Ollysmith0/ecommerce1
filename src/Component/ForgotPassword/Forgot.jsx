@@ -7,6 +7,7 @@ const Forgot = () => {
     return(
     <>
         <Header />
+            <div>Hello</div>
             <div className="container-forgot">
                 <h1 className="forgot-title">login</h1>
                 <h3 className="reset-pass">reset your password</h3>
