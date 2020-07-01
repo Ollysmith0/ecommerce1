@@ -1,0 +1,332 @@
+.wrapper{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    .container-about{
+        .about-title{
+            text-align: center;
+            color: #626545;
+            text-transform: uppercase;
+            padding-bottom: 8px;
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 5px;
+            font-family: "BlairITCStd", Arial, sans-serif;
+        }
+        .group-row{
+            content: "";
+            clear: both;
+            display: table;
+            margin: 2rem auto;
+            .left-item{
+                width: 50%;
+                margin: 0;
+                float: left;
+                .story-title{
+                    font-family: "schoolbook-web",Georgia,serif;
+                    color: #818185;
+                    font-size: 1.75rem;
+                    font-weight: 400;
+                    text-align: center;
+                    margin: 2rem auto;
+                }
+                .story-desc{
+                    line-height: 2;
+                    text-align: center;
+                    color: #646569;
+                    font-size: 1.15rem;
+                }
+            }
+            .right-item{
+                width: 50%;
+                float: left;
+                .image-container{
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .left-item-2{
+                width: 33.333333%;
+                float: left;
+                margin-right: 3rem;
+                .image-container{
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .right-item-2{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                border-left: 5px solid #007580;
+                .story-desc{
+                    display: block;
+                    font-style: italic;
+                    color: #646569;
+                    line-height: 1.6;
+                }
+            }
+        }
+        .group-row-2{
+            width: 66.666667%;
+            margin-left: 16.6666667%;
+            .para{
+                color: #646569;
+                font-family: "schoolbook-web",Georgia,serif;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5;
+                text-align: justify;
+            }
+            blockquote{
+                margin: 0;
+                color: #646569;
+                font-family: "schoolbook-web",Georgia,serif;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+        .about-shopkeeper{
+            max-width: 1180px;
+            margin-bottom: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 1px ridge rgb(175, 173, 173);
+            .shopkeeper-title{
+                text-align: center;
+                color: #007580;
+                text-transform: uppercase;
+                padding-bottom: 8px;
+                font-size: 1.18rem;
+                font-weight: 400;
+                letter-spacing: .2rem;
+                font-family: "BlairITCStd", Arial, sans-serif;
+            }
+            .para{
+                width: 66.666667%;
+                margin-left: 16.6666667%;
+                color: #646569;
+                line-height: 1.7;
+            }
+            .grid-layout{
+                margin: 2rem auto;
+                height: 320px;
+                .image-cell{
+                    min-height: 1px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    width: 25%;
+                    float: left;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                        border: 0;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .image-desc{
+                        color: rgba(100,101,105,0.6);
+                        margin-top: 9px;
+                        font-size: 1rem;
+                        line-height: 18px;
+                    }
+                }
+                .image-cell-1{
+                    min-height: 1px;
+                    width: 16.666667%;
+                    float: left;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .image-desc{
+                        color: rgba(100,101,105,0.6);
+                        margin-top: 9px;
+                        font-size: 1rem;
+                        line-height: 18px;
+                    }
+                }
+                .image-cell-3{
+                    min-height: 1px;
+                    width: 33.333333%;
+                    float: left;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .image-desc{
+                        color: rgba(100,101,105,0.6);
+                        margin-top: 9px;
+                        font-size: 1rem;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .cooporation{
+            .cooporation-title{
+                text-align: center;
+                font-size: 1.2rem;
+                font-family: "schoolbook-web", Georgia, serif;
+                font-weight: 400;
+                color: #646569;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+            .logo-coop{
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    margin: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .wrapper{
+        .container-about{
+            .about-title{
+
+            }
+            .group-row{
+                .left-item{
+                    width: 100%;
+                }
+                .right-item{
+                    width: 100%;
+                }
+                .left-item-2{
+                    width: 100%;
+                }
+                .right-item-2{
+                    width: 100%;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+            }
+            .group-row-2{
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0;
+                width: 100%;
+            }
+            .container-image-fish{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .about-shopkeeper{
+                .shopkeeper-title{
+                }
+                .para{
+                    width: 100%;
+                    margin: 0;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                .grid-layout{
+                    height: 600px;
+                    .image-cell{
+                        width: 50%;
+                    }
+                    .image-cell-1{
+                        width: 50%;
+                    }
+                    .image-cell-3{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 778px){
+    .wrapper{
+        .container-about{
+            .about-title{
+
+            }
+            .group-row{
+                .left-item{
+                    width: 100%;
+                }
+                .right-item{
+                    width: 100%;
+                }
+                .left-item-2{
+                    width: 100%;
+                }
+                .right-item-2{
+                    width: 100%;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+            }
+            .group-row-2{
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0;
+                width: 100%;
+            }
+            .container-image-fish{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .about-shopkeeper{
+                .shopkeeper-title{
+                }
+                .para{
+                    width: 100%;
+                    margin: 0;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                .grid-layout{
+                    height: 1150px;
+                    text-align: center;
+                    .image-cell{
+                        width: 100%;
+                    }
+                    .image-cell-1{
+                        width: 100%;
+                    }
+                    .image-cell-3{
+                        width: 100%;
+                    }
+                }
+            }
+            .cooporation{
+                .cooporation-title{
+
+                }
+                .logo-coop{
+                    img{
+                        display: block;
+                        margin: 40px auto;
+                    }
+                }
+            }
+        }
+    }
+}

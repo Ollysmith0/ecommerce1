@@ -1,0 +1,248 @@
+footer {
+  margin-top: 2rem;
+  padding: 40px 40px;
+  display: block;
+  color: #929064;
+  background-color: #3e441d;
+  text-align: center;
+  background-image: url("https://cdn.shopify.com/s/files/1/0283/5820/t/9/assets/footer.jpg?31526322267640576");
+  background-size: cover;
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    .wrapper::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .grid-layout {
+      padding-bottom: 2rem;
+      direction: ltr;
+      .logo {
+        box-sizing: border-box;
+        font-size: 16px;
+        min-width: 1px;
+        vertical-align: top;
+        width: 25%;
+        display: inline-block;
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+      .subscribes {
+        font-weight: 400;
+        display: inline-block;
+        width: 25%;
+        box-sizing: border-box;
+        vertical-align: top;
+        min-height: 1px;
+        .subscribes-title {
+          font-family: "schoolbook-web", Georgia, serif;
+          color: #a8a476;
+          text-transform: uppercase;
+          font-size: 1.1875em;
+          font-weight: 400;
+          margin: 0;
+        }
+        .subscribes-desc {
+          font-style: italic;
+          color: #c2c2b4;
+          font-family: "schoolbook-web", Georgia, serif;
+          font-size: 0.875rem;
+          word-wrap: break-word;
+          word-break: break-word;
+          overflow-wrap: break-word;
+        }
+        form {
+          .mail {
+            position: static;
+            height: 46px;
+            padding: 10px;
+            background-color: transparent;
+            border: 2px ridge white;
+            max-width: 160px;
+            width: 100%;
+            color: white;
+            outline: none;
+          }
+
+          .submit-sign-up {
+            padding: 0.75rem 20px;
+            cursor: pointer;
+            border: none;
+            vertical-align: middle;
+            margin-left: 0.5rem;
+            background-color: #a8a476;
+            color: #4b5028;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: Oswald, Helvetica, Arial, "Sans Serif";
+            transition: background-color 0.4s ease;
+          }
+
+          button:hover {
+            background-color: rgba($color: #c2c2b4, $alpha: 1.5);
+          }
+        }
+      }
+      .Links {
+        font-weight: 400;
+        display: inline-block;
+        width: 25%;
+        box-sizing: border-box;
+        vertical-align: top;
+        min-height: 1px;
+        .Links-title {
+          margin: 0;
+          text-transform: uppercase;
+          font-family: "schoolbook-web", Georgia, serif;
+          color: #a8a476;
+          font-weight: 400;
+          font-size: 1.1875em;
+        }
+        ul {
+          padding: 0;
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: #c2c2b4;
+              font-size: 0.85rem;
+              line-height: 1.5;
+              transition: color 0.4s ease;
+            }
+            a:hover {
+              color: rgba($color: #c2c2b4, $alpha: 0.5);
+            }
+          }
+        }
+      }
+      .contact {
+        font-weight: 400;
+        display: inline-block;
+        width: 25%;
+        box-sizing: border-box;
+        vertical-align: top;
+        min-height: 1px;
+        .contact-title {
+          margin: 0;
+          font-family: "schoolbook-web", Georgia, serif;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 1.1875em;
+        }
+        .contact-desc {
+          font-size: 0.875rem;
+          color: #c2c2b4;
+          font-family: "schoolbook-web", Georgia, serif;
+          display: block;
+          line-height: 1.5;
+          .my-mail {
+            color: #c2c2b4;
+            transition: color 0.4s ease;
+            padding-left: 0.2rem;
+          }
+          .my-mail:hover {
+            color: rgba($color: #c2c2b4, $alpha: 0.5);
+          }
+        }
+        .social-media-contact {
+          .social-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            li {
+              list-style-type: none;
+              padding: 0.5rem;
+              a {
+                text-decoration: none;
+                color: #a8a476;
+                font-size: 1.2rem;
+              }
+              a:hover {
+                color: rgba($color: #c2c2b4, $alpha: 1.5);
+              }
+            }
+          }
+        }
+        .address {
+          margin-top: 0.5rem;
+          .address-desc {
+            margin: 0;
+            padding: 0.2rem 0;
+            text-transform: uppercase;
+            font-family: "schoolbook-web", Georgia, serif;
+            color: #c2c2b4;
+          }
+        }
+      }
+    }
+    .copy-right {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      .copy-right-title {
+        padding-right: 0.5rem;
+        border-right: 1px ridge #c2c2b4;
+        .site {
+          text-decoration: none;
+          color: #c2c2b4;
+          transition: color 0.4s ease;
+        }
+        .site:hover {
+          color: #88887f;
+        }
+      }
+      .copy-right-desc {
+        padding-left: 0.5rem;
+        .desc {
+          text-decoration: none;
+          color: #c2c2b4;
+          transition: color 0.4s ease;
+        }
+        .desc:hover {
+          color: #88887f;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    .wrapper {
+      .grid-layout {
+        .logo {
+          width: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #5d6037;
+        }
+        .subscribes {
+          width: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #5d6037;
+        }
+        .Links {
+          width: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #5d6037;
+        }
+        .contact {
+          width: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

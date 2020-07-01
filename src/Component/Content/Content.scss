@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.slider-items {
+  background: #444;
+  color: #fff;
+  transition: transform 400ms ease-out;
+  display: inline-block;
+  min-height: 100%;
+  position: relative;
+  height: 40vh;
+  width: 100vw;
+  text-align: center;
+}
+
+form {
+  white-space: nowrap;
+}
+input {
+  position: absolute;
+}
+
+.keys {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  transition: all 300ms linear;
+  opacity: 0;
+}
+
+input:focus ~ .keys {
+  opacity: 0.8;
+}
+
+input:nth-of-type(1):checked ~ .slider-items:nth-of-type(1),
+input:nth-of-type(2):checked ~ .slider-items:nth-of-type(2),
+input:nth-of-type(3):checked ~ .slider-items:nth-of-type(3),
+input:nth-of-type(4):checked ~ .slider-items:nth-of-type(4) {
+  z-index: 0;
+}
+
+input:nth-of-type(1):checked ~ .slider-items {
+  transform: translate3d(0, 0, 0);
+}
+
+input:nth-of-type(2):checked ~ .slider-items {
+  transform: translate3d(-100%, 0, 0);
+  z-index: 99999;
+}
+
+input:nth-of-type(3):checked ~ .slider-items {
+  transform: translate3d(-200%, 0, 0);
+  z-index: 99999;
+}
+
+input:nth-of-type(4):checked ~ .slider-items {
+  transform: translate3d(-300%, 0, 0);
+  z-index: 99999;
+}
+
+.slider-items {
+  background: #444;
+  background-size: cover;
+  font-size: 3rem;
+}
+
+.slider-items[for="spades"] {
+  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.slider-items[for="hearts"] {
+  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.slider-items[for="diamonds"] {
+  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.slider-items[for="clubs"] {
+  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.slider-items:before,
+.slider-items:after {
+  color: white;
+  display: block;
+  background: black;
+  position: absolute;
+  padding: 1rem;
+  font-size: 3rem;
+  height: 10rem;
+  line-height: 8rem;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  cursor: pointer;
+}
+
+.slider-items:before {
+  content: "\276D";
+  right: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.slider-items:after {
+  content: "\276C";
+  left: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  .side__bar {
+    display: inline-block;
+    padding: 1rem;
+    width: 25%;
+    height: 461px;
+    background-color: white;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    .side__bar__title {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 300;
+      color: #646569;
+      font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+      margin: 0;
+      height: 30px;
+      width: 100%;
+      border-bottom: 1px ridge rgba(202, 193, 193, 0.5);
+    }
+    ul {
+      padding-left: 0;
+      li {
+        list-style: none;
+        padding: 0.15rem 0;
+        a {
+          text-decoration: none;
+          color: #a4a4a7;
+          font-size: 15px;
+        }
+        a:hover {
+          color: #007580;
+        }
+        a:active {
+          color: #007580;
+        }
+      }
+    }
+    .side__bar__tag {
+      font-weight: 300;
+      color: #646569;
+      font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+      height: 30px;
+      border-bottom: 1px ridge rgba(202, 193, 193, 0.5);
+    }
+    .side-bar-items {
+      .tag-item {
+        color: #6e6f73;
+        background: #efeff0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: "Libre Franklin", Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        transition: all 0.1s ease-in-out;
+        outline: none;
+        padding: 5px 5px;
+        font-size: 0.725rem;
+        border: none;
+        background: #efeff0;
+        margin-right: 18px;
+      }
+      .tag-item:hover {
+        color: white;
+        background-color: #007580;
+      }
+    }
+  }
+  .content__body {
+    width: 75%;
+    .content__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem auto;
+      border-bottom: 1px ridge rgba(202, 193, 193, 0.5);
+      .content__title {
+        display: inline;
+        margin: 0;
+        color: #787a5e;
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: "BlairITCStd", Arial, sans-serif;
+      }
+      .right-items {
+        .content__label {
+          background: none;
+          font-size: 0.7rem;
+          font-weight: 600;
+          display: inline-block;
+          padding-right: 1rem;
+        }
+      }
+      #featured {
+        height: 26px;
+        margin: 0;
+        padding: 0 28px 0 10px;
+        border: 0;
+        outline: 2px solid #007580;
+        outline-offset: 1px;
+        font-size: 0.75rem;
+        appearance: none;
+        background-image: url("//cdn.shopify.com/s/files/1/0156/0327/t/10/assets/ico-select.svg?v=15898558216268231574");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-color: #fcf9f4;
+        option {
+          background-color: #fcf9f4;
+          width: auto;
+          line-height: 5px;
+        }
+      }
+    }
+    .product__collections {
+      .box__product {
+        box-sizing: border-box;
+        font-size: 16px;
+        min-height: 1px;
+        vertical-align: top;
+        width: 33.3333333%;
+        margin-bottom: 20px;
+        display: inline-block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        padding-left: 30px;
+        direction: ltr;
+        figure {
+          display: block;
+          margin: 0;
+          .image-table {
+            height: 280px;
+            max-width: 100%;
+            width: 100%;
+            display: table;
+            table-layout: auto;
+            cursor: pointer;
+            .image-cell {
+              width: 100%;
+              display: table-cell;
+              vertical-align: middle;
+              text-align: center;
+              .product-image {
+                position: relative;
+                background-size: cover;
+                background-image: url("//cdn.shopify.com/s/files/1/0156/0327/products/IMG_7361_large.jpg?v=1547229074");
+                display: inline-block;
+                width: 100%;
+                background-position: -1000px -1000px;
+                background-repeat: no-repeat;
+                background-color: #fff;
+                transition: color 0.1s ease-in-out;
+              }
+              img {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+                height: auto;
+                transition: all 0.1s ease-out;
+                border: 0;
+              }
+              .label-sale {
+                background-color: #e75300;
+                color: #ffffff;
+                position: absolute;
+                bottom: 32px;
+                right: 0px;
+                padding: 1px 8px;
+                font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+                font-size: 0.75rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  figcaption {
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.3;
+    display: block;
+    cursor: pointer;
+    .product-title {
+      display: block;
+      margin-top: 4px;
+      color: #007580;
+      font-size: 1.125rem;
+      text-decoration: none;
+      text-align: center;
+      font-family: "Roboto Slab", serif;
+      line-height: 1.3;
+    }
+    .price {
+      display: block;
+      font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      color: #b0afae;
+      .money {
+        color: black;
+      }
+    }
+  }
+  .pagination-item {
+    text-align: center;
+    .page-item {
+      background-color: transparent;
+      border: 1px ridge rgba(202, 193, 193, 0.5);
+      padding: 0;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        color: #828284;
+        font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+      }
+      a:hover {
+        color: white;
+        background-color: rgba($color: #007580, $alpha: 1);
+      }
+      i {
+        color: #828284;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    i:hover {
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .content {
+    .side__bar {
+    }
+    .content__body {
+      .content__top {
+        display: flex;
+        justify-content: space-between;
+        min-width: 1px;
+        padding: 0 1rem;
+        .content__title {
+          padding-right: 1rem;
+        }
+        .right-items {
+          .content__label {
+            margin-left: 0;
+          }
+        }
+      }
+      .product__collections {
+        .box__product {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    .side__bar {
+      display: none;
+    }
+    .content__body {
+      width: 800px;
+      .content__top {
+        .content__title {
+        }
+        .content__label {
+          margin: 0;
+        }
+      }
+      .product__collections {
+        .box__product {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

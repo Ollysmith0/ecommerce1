@@ -1,0 +1,95 @@
+.container-forgot{
+    box-sizing: border-box;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    .forgot-title{
+        text-transform: uppercase;
+        font-family: "BlairITCStd", Arial, sans-serif;
+        font-weight: 400;
+        color: #626545;
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 1rem;
+        text-align: center;
+
+    }
+    .reset-pass{
+        font-family: "BlairITCStd", Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #505531;
+        line-height: 1.2;
+        margin-top: 1rem;
+        padding: 1rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .forgot-desc{
+        margin: 0;
+        font-size: 0.875rem;
+        font-family: "schoolbook-web",Georgia,serif;
+        color: #646569;
+        font-weight: 400;
+        text-align: center;
+    }
+    form{
+        .email-title{
+            display: block;
+            text-transform: uppercase;
+            font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+            color: #A09FA2;
+            letter-spacing: .15rem;
+            font-weight: 400;
+            font-size: 0.75rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        #forgot-input{
+            position: static;
+            height: 30px;
+            width: 100%;
+            outline: 1px solid #CCCCCC;
+            outline-offset: -1px;
+            font-family: "Libre Franklin",Arial,sans-serif;
+            font-size: .85rem;
+            color: #646569;
+        }
+        #forgot-input:focus{
+            outline: 1px solid #007580;
+        }
+    .submit-obj{
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 5.75rem;
+        .submit{
+            padding: 8px 32px;
+            font-size: 1rem;
+            font-weight: 400;
+            background-color: #007580;
+            color: #fff;
+            font-family: "BlairITCStd", Arial, sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+        .submit:hover{
+            background-color: #02464d;
+        }
+        .Cancel{
+            font-size: 1rem;
+            text-decoration: none;
+            color: #A09FA2;
+            padding-left: 0.875rem;
+            font-family: "schoolbook-web",Georgia,serif;
+            font-style: italic;
+        }
+    }
+}
+}

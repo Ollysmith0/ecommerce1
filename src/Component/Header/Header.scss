@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+.container {
+  padding: 1rem;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px ridge rgb(202, 193, 193);
+
+  .logo {
+    font-weight: 300;
+    color: black;
+    display: flex;
+    align-items: center;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+
+  .shopping__cart {
+    color: black;
+    font-weight: 300;
+
+    span a {
+      text-decoration: none;
+      color: gray;
+      font-family: "Titillium Web", sans-serif;
+      margin-left: 3rem;
+      padding: 1rem;
+      transition: all 0.5s ease-in-out;
+      box-sizing: border-box;
+    }
+    a:hover {
+      color: white;
+      background-color: #3b441b;
+      border-radius: 50%;
+    }
+  }
+}
+
+.header-top {
+  background-color: #252823;
+  .menu {
+    padding: 0.5rem 1rem;
+    min-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b5ab86;
+    .search {
+      position: relative;
+      top: 23px;
+      .dropdown-menu {
+        display: none;
+      }
+      form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 1s;
+        width: 50px;
+        height: 50px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 4px solid white;
+        padding: 5px;
+      }
+      .search-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 0 20px;
+      }
+      .fas {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: black;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;
+      }
+      form:hover {
+        width: 200px;
+        cursor: pointer;
+      }
+
+      form:hover .search-input {
+        display: block;
+        background-color: white;
+      }
+
+      form:hover .fas {
+        background: #07051a;
+        color: white;
+      }
+    }
+    .authentication {
+      color: #b5ab86;
+      display: flex;
+      align-items: center;
+      .login {
+        text-decoration: none;
+        color: #b5ab86;
+        font-size: 0.875rem;
+        padding: 10px;
+        border-right: 1px solid rgba($color: #b5ab86, $alpha: 0.5);
+        transition: color 0.4s ease;
+      }
+      .login:hover {
+        color: #ddd3af;
+      }
+      .create-acc {
+        text-decoration: none;
+        color: #b5ab86;
+        font-size: 0.875rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: color 0.4s ease;
+      }
+      .create-acc:hover {
+        color: #ddd3af;
+      }
+      .cart {
+        border: 1px solid rgba($color: #b5ab86, $alpha: 0.5);
+        padding: 5px 10px;
+        transition: all 0.4s ease-in-out;
+        .cart-items {
+          text-decoration: none;
+          color: #b5ab86;
+          font-size: 0.875rem;
+          span {
+            padding: 2px;
+          }
+        }
+      }
+      .cart:hover {
+        span {
+          color: black;
+        }
+        background-color: #b5ab86;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header-top {
+    .menu {
+      margin-left: auto;
+      margin-right: auto;
+      .search {
+        position: static;
+        form {
+          display: none;
+        }
+        .dropdown-menu {
+          display: contents;
+          .menu-mini {
+            padding: 0;
+            text-decoration: none;
+            position: relative;
+            .menu-title {
+              border-right: 1px ridge rgba($color: #b5ab86, $alpha: 0.5);
+              padding-right: 10px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              margin-bottom: 10px;
+              text-decoration: none;
+              color: #b5ab86;
+              height: 40px;
+            }
+            .sub-menu {
+              padding: 0;
+              margin: 0;
+              visibility: hidden;
+              opacity: 0;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              transform: translateY(-2rem);
+              z-index: -1;
+              transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+              z-index 0s linear 0.01s;
+              .Shop{
+                margin-top: 13px;
+              }
+              li {
+                list-style: none;
+                background-color: #252823;
+                padding: 1rem;
+                width: 200px;
+                text-align: center;
+                transition: width 0.5s;
+                a {
+                  color: #b5ab86;
+                  text-decoration: none;
+                  width: 130px;
+                  text-transform: uppercase;
+                  font-family: "Titillium Web", sans-serif;
+                }
+              }
+              li:hover{
+                  display: inline-block;
+                  width: 170px;
+                  background-color: #b5ab86;
+                  border-radius: 5px;
+              }
+              li:hover > a{
+                color: white;
+                text-decoration: none;
+              }
+              .last-item {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+              }
+            }
+            #menu-icon {
+              position: static;
+              cursor: pointer;
+              color: #b5ab86;
+              width: 30px;
+              padding: 0;
+              height: 25px;
+            }
+          }
+          .menu-mini:focus .sub-menu,
+          .menu-mini:focus-within .sub-menu,
+          .menu-mini:hover .sub-menu {
+            color: rgba($color: #b5ab86, $alpha: 1.5);
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
+            transform: translateY(0%);
+            transition-delay: 0s, 0s, 0.3s;
+          }
+        }
+      }
+      .authentication {
+        .login {
+          display: none;
+        }
+        .create-acc {
+          display: none;
+        }
+      }
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    .logo {
+      display: block;
+      img {
+        background-size: cover;
+        display: inline-block;
+        width: 100%;
+        background-repeat: no-repeat;
+        height: auto;
+      }
+    }
+    .right-items {
+      display: none;
+    }
+  }
+}

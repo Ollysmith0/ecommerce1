@@ -1,0 +1,103 @@
+.wrapper {
+  font-family: "schoolbook-web", Georgia, serif;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  .container-contact {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    .contact-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #626545;
+      text-transform: uppercase;
+    }
+    .contact-desc {
+      text-align: center;
+      color: #878789;
+      font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .input-row {
+      margin-bottom: 1rem;
+      .name-title {
+        display: block;
+        font-size: 0.875rem;
+        background-color: transparent;
+        color: #a09fa2;
+        text-transform: uppercase;
+        padding-bottom: 0.3rem;
+      }
+      .email-title {
+        display: block;
+        font-size: 0.875rem;
+        background-color: transparent;
+        color: #a09fa2;
+        text-transform: uppercase;
+        padding-bottom: 0.3rem;
+      }
+      .phone-title {
+        display: block;
+        font-size: 0.875rem;
+        background-color: transparent;
+        color: #a09fa2;
+        text-transform: uppercase;
+        padding-bottom: 0.3rem;
+      }
+      .comment-title {
+        display: block;
+        font-size: 0.875rem;
+        background-color: transparent;
+        color: #a09fa2;
+        text-transform: uppercase;
+        padding-bottom: 0.3rem;
+      }
+      #name {
+        position: static;
+        width: 100%;
+        padding: 0.4rem;
+        outline-offset: -1px;
+        color: rgb(139, 138, 139);
+        font-family: "Libre Franklin", Arial, sans-serif;
+      }
+      #name:focus {
+        outline: 1px ridge #007580;
+      }
+      #email {
+        position: static;
+        width: 100%;
+        padding: 0.4rem;
+        outline-offset: -1px;
+        color: rgb(139, 138, 139);
+        font-family: "Libre Franklin", Arial, sans-serif;
+      }
+      #email:focus {
+        outline: 1px ridge #007580;
+      }
+      #phone {
+        position: static;
+        width: 100%;
+        padding: 0.4rem;
+        outline-offset: -1px;
+        color: rgb(139, 138, 139);
+        font-family: "Libre Franklin", Arial, sans-serif;
+      }
+      #phone:focus {
+        outline: 1px ridge #007580;
+      }
+      #comment {
+        position: static;
+        width: 100%;
+        padding: 0.4rem;
+        outline-offset: -1px;
+        color: rgb(139, 138, 139);
+        font-family: "Libre Franklin", Arial, sans-serif;
+      }
+      #comment:focus {
+        outline: 1px ridge #007580;
+      }
+    }
+  }
+}

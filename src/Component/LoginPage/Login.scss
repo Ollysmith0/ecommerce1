@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  .header-top {
+    width: 100%;
+    .menu {
+      max-width: 1180px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.container-login {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 132px;
+  .Login-title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: "BlairITCStd", Arial, sans-serif;
+    font-weight: 400;
+    color: #626545;
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  form {
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "schoolbook-web", Georgia, serif;
+    color: #646569;
+    font-weight: 400;
+    box-sizing: border-box;
+    .label-title {
+      font-size: 0.9rem;
+      background-color: transparent;
+      font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+      text-transform: uppercase;
+      color: #a09fa2;
+    }
+    .input-row {
+      position: static;
+      margin-bottom: 1rem;
+      .label-title {
+        display: block;
+        margin-bottom: 0.2rem;
+        width: 100%;
+        text-transform: uppercase;
+      }
+      #pass {
+        position: static;
+        width: 100%;
+        padding: 0.3rem;
+        outline-offset: -1px;
+      }
+      #pass:focus {
+        outline: none;
+        outline: 1px ridge #007580;
+      }
+      #Email {
+        position: static;
+        width: 100%;
+        padding: 0.3rem;
+        outline-offset: -1px;
+      }
+      #Email:focus {
+        outline: none;
+        outline: 1px ridge #007580;
+      }
+      #recovery {
+        display: table;
+        margin-left: 10rem;
+        margin-top: 0.7rem;
+        color: #007580;
+        transition: color 0.4s ease;
+        font-family: "schoolbook-web", Georgia, serif;
+        font-size: 0.8rem;
+      }
+      #recovery:hover {
+        color: #182627;
+      }
+    }
+    .submit {
+      text-align: center;
+      .sign-in {
+        padding: 0.5rem 2rem;
+        border: none;
+        background-color: #007580;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "BlairITCStd", Arial, sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.4s ease;
+      }
+      .sign-in:hover {
+        background-color: #354b4d;
+      }
+      .return {
+        padding-left: 0.5rem;
+        text-decoration: none;
+        color: #b0afae;
+        font-family: "schoolbook-web", Georgia, serif;
+        font-style: italic;
+        font-size: 0.875rem;
+        border-right: 1px ridge #b0afae;
+        padding-right: 0.3rem;
+        transition: color 0.4s ease;
+      }
+      .return:hover {
+        color: #666564;
+      }
+
+      .create {
+        padding-left: 0.5rem;
+        text-decoration: none;
+        color: #b0afae;
+        font-family: "schoolbook-web", Georgia, serif;
+        font-style: italic;
+        font-size: 0.875rem;
+        transition: color 0.4s ease;
+      }
+      .create:hover {
+        color: #666564;
+      }
+    }
+  }
+}
