@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "mollyjogger-fc8ea"
+    "production": "ecommerce1-8123b",
+    "default": "ecommerce1-8123b"
+  },
+  "targets": {
+    "ecommerce1-8123b": {
+      "hosting": {
+        "about": [
+          "ecommerce1-8123b"
+        ]
+      }
+    }
   }
 }

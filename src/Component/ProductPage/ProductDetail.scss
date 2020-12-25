@@ -1,5 +1,5 @@
 .container-detail{
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   .product-detail-container{
     display: grid;
@@ -7,22 +7,23 @@
     .left-content{
       .product-img{
         display: inline-block;
-        width: 675px;
-        height: 675px;
+        width: 100%;
         .product-image{
           background-image: 'https://cdn.shopify.com/s/files/1/0156/0327/products/IMG_4571_1_1024x1024.jpg?v=1499307602';
-          width: 675px;
-          height: 675px;
-        .image{
-          max-width: 675px;
-          max-height: 675px;
-        }
+          width: 100%;
+          .image{
+            max-height: 675px;
+            width: 100%;
+            height: auto;
+          }
         }
       }
 
       .product-imgs{
+        width: 100%;
+        text-align: center;
         .img{
-          width: 100%;
+          max-width: 100%;
           cursor: pointer;
 
           &:hover > img{
@@ -187,69 +188,125 @@
         }
 
         #product-suggest0{
-          width: 272px;
-          height: 272px;  
+          max-width: 272px;
+          max-height: 272px;  
           display: inline-block;
           background-size: cover;
           background-position: center center;
 
           .suggest-img{
-            width: 272px;
-            height: 272px;
+            max-width: 272px;
+            max-height: 272px;
           }
         }
 
         #product-suggest1{
-          width: 272px;
-          height: 272px;
+          max-width: 272px;
+          max-height: 272px;
           display: inline-block;
           background-size: cover;
           background-position: center center;
 
           .suggest-img{
-            width: 272px;
-            height: 272px;
+            max-width: 272px;
+          max-height: 272px;
           }
         }
 
         #product-suggest2{
-          width: 272px;
-          height: 272px;
+          max-width: 272px;
+          max-height: 272px;
           display: inline-block;
           background-size: cover;
           background-position: center center;
 
           .suggest-img{
-            width: 272px;
-            height: 272px;
+            max-width: 272px;
+          max-height: 272px;
           }
         }
 
         #product-suggest3{
-          width: 272px;
-          height: 272px;
+          max-width: 272px;
+          max-height: 272px;
           display: inline-block;
           background-size: cover;
           background-position: center center;
 
           .suggest-img{
-            width: 272px;
-            height: 272px;
+            max-width: 272px;
+          max-height: 272px;
           }
         }
 
         #product-suggest4{
-          width: 272px;
-          height: 272px;
+          max-width: 272px;
+          max-height: 272px;
           display: inline-block;
           background-size: cover;
           background-position: center center;
 
           .suggest-img{
-            width: 272px;
-            height: 272px;
+            max-width: 272px;
+          max-height: 272px;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container-detail{
+    width: 100%;
+    .product-detail-container{
+      grid-template-columns: 1fr;
+      width: 100%;
+
+      .product-detail{
+        width: 100%;
+
+        .product-name, .product-price{
+          text-align: center;
+        }
+        .add-to-cart-btn{
+          margin-left: 36%;
+
+          &:focus{
+            outline: none;
+          }
+        }
+
+        .product-description{
+          max-width: 700px;
+          width: 100%;
+          text-align: justify;
+          display: block;
+          margin: 2rem auto;
+        }
+
+        .sale-description{
+          max-width: 700px;
+          width: 100%;
+          text-align: justify;
+          display: block;
+          margin: 1rem auto;
+        }
+
+        .recomment{
+          margin-left: 3rem;
+        }
+      }
+    }
+
+    .products-suggested{
+      margin: 2rem auto;
+      .products-suggested-title{
+      }
+      ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
       }
     }
   }
