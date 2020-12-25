@@ -33,10 +33,40 @@
       transition: all 0.5s ease-in-out;
       box-sizing: border-box;
     }
-    a:hover {
-      color: white;
-      background-color: #3b441b;
-      border-radius: 50%;
+    .nav-item{
+      position: relative;
+    }
+
+    .nav-item::before{
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      top: 70%;
+      background:#252823;
+      transition: all .3s ease-in-out;
+    }
+
+    .nav-item::after{
+      content: "";
+      height: 0;
+      width: 2px;
+      background:#252823;
+      position: absolute;
+      left: 0;
+      transition: all .3s ease-in-out;
+    }
+
+    .nav-item:hover::after{
+      height: 43%;
+    }
+
+    .nav-item:hover::before{
+      width: 100%;
+      left: 0;
+      right: 0;
     }
   }
 }
@@ -202,32 +232,33 @@
               transform: translateY(-2rem);
               z-index: -1;
               transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-              z-index 0s linear 0.01s;
-              .Shop{
+                z-index 0s linear 0.01s;
+              .Shop {
                 margin-top: 13px;
               }
-              li {
-                list-style: none;
-                background-color: #252823;
-                padding: 1rem;
-                width: 200px;
-                text-align: center;
-                transition: width 0.5s;
-                a {
-                  color: #b5ab86;
-                  text-decoration: none;
-                  width: 130px;
-                  text-transform: uppercase;
-                  font-family: "Titillium Web", sans-serif;
+              a {
+                text-decoration: none;
+                color: #b5ab86;
+                text-transform: uppercase;
+                li {
+                  position: relative;
+                  list-style: none;
+                  background-color: #252823;
+                  padding: 1rem;
+                  width: 200px;
+                  text-align: center;
+                  transition: width 0.5s;
                 }
               }
-              li:hover{
-                  display: inline-block;
-                  width: 170px;
-                  background-color: #b5ab86;
-                  border-radius: 5px;
+              li:hover {
+                display: inline-block;
+                width: 170px;
+                color: white;
+                background-color: #b5ab86;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
               }
-              li:hover > a{
+              li:hover > a {
                 color: white;
                 text-decoration: none;
               }

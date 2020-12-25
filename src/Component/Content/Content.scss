@@ -75,29 +75,29 @@ input:nth-of-type(4):checked ~ .slider-items {
 }
 
 .slider-items[for="spades"] {
-  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
-  background-size: cover;
+  background: url("https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: 1535px 600px;
   width: 100%;
   height: 600px;
 }
 
 .slider-items[for="hearts"] {
-  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
-  background-size: cover;
+  background: url("https://images.unsplash.com/photo-1516763296043-f676c1105999?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1026&q=80");
+  background-size: 1535px 600px;
   width: 100%;
   height: 600px;
 }
 
 .slider-items[for="diamonds"] {
-  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
-  background-size: cover;
+  background: url("https://images.unsplash.com/uploads/14126691796798a85b1b0/970ca552?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: 1535px 600px;
   width: 100%;
   height: 600px;
 }
 
 .slider-items[for="clubs"] {
-  background: url("https://www.lg.com/za/images/MC/features/MC-K40S-NewAuroraBlack-08-Youtube-Live-Desktop.jpg");
-  background-size: cover;
+  background: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: 1535px 600px;
   background-repeat: no-repeat;
   width: 100%;
   height: 600px;
@@ -284,13 +284,16 @@ input:nth-of-type(4):checked ~ .slider-items {
               .product-image {
                 position: relative;
                 background-size: cover;
-                background-image: url("//cdn.shopify.com/s/files/1/0156/0327/products/IMG_7361_large.jpg?v=1547229074");
+                background-image: url("//cdn.shopify.com/s/files/1/0156/0327/products/fish.knife.b_large.jpg?v=1474313324");
                 display: inline-block;
                 width: 100%;
-                background-position: -1000px -1000px;
                 background-repeat: no-repeat;
                 background-color: #fff;
-                transition: color 0.1s ease-in-out;
+                transition: color 0.1s ease-in-out; 
+
+                &:hover > img{
+                  opacity: 0;
+                }
               }
               img {
                 display: block;
@@ -345,6 +348,15 @@ input:nth-of-type(4):checked ~ .slider-items {
       color: #b0afae;
       .money {
         color: black;
+        padding-left: 5px;
+      }
+
+      .from{
+        text-decoration: line-through;
+      }
+
+      .original-price{
+        text-decoration: line-through;
       }
     }
   }

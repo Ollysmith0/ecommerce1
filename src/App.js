@@ -1,12 +1,13 @@
-import React from 'react';
-import Home from './Component/Home.jsx';
-import Login from './Component/LoginPage/Login.jsx';
-import Contact from './Component/ContactPage/Contact.jsx';
-import About from './Component/AboutPage/About.jsx';
-import Register from './Component/RegisterPage/Register.jsx';
-import Forgot from './Component/ForgotPassword/Forgot.jsx';
-import Error from './Component/Error.jsx';
-import { Route, Switch } from 'react-router-dom';
+import React from "react";
+import Home from "./Component/Home.jsx";
+import Login from "./Component/LoginPage/Login.jsx";
+import Contact from "./Component/ContactPage/Contact.jsx";
+import About from "./Component/AboutPage/About.jsx";
+import Register from "./Component/RegisterPage/Register.jsx";
+import Forgot from "./Component/ForgotPassword/Forgot.jsx";
+import Error from "./Component/Error.jsx";
+import ProductDetail from "./Component/ProductPage/ProductDetail.jsx";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" component={About} exact></Route>
         <Route path="/register" component={Register} exact></Route>
         <Route path="/forgot" component={Forgot} exact></Route>
+        <Route path="/detail" component={ProductDetail} exact></Route>
         <Route component={Error} exact></Route>
       </Switch>
     </div>

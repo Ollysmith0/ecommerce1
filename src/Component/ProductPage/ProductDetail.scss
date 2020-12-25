@@ -1,0 +1,256 @@
+.container-detail{
+  width: 1180px;
+  margin: 0 auto;
+  .product-detail-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .left-content{
+      .product-img{
+        display: inline-block;
+        width: 675px;
+        height: 675px;
+        .product-image{
+          background-image: 'https://cdn.shopify.com/s/files/1/0156/0327/products/IMG_4571_1_1024x1024.jpg?v=1499307602';
+          width: 675px;
+          height: 675px;
+        .image{
+          max-width: 675px;
+          max-height: 675px;
+        }
+        }
+      }
+
+      .product-imgs{
+        .img{
+          width: 100%;
+          cursor: pointer;
+
+          &:hover > img{
+            opacity: .8;
+          }
+        }
+        .knife5-img{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .product-detail{
+        .product-name{
+          font-family: "Titillium Web", sans-serif;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          color: #626545;
+
+          font-size: 2em;
+          margin-bottom: 4px;
+        }
+
+        .product-price{
+          display: block;
+          font-size: 1.5em;
+          font-weight: 400;
+          font-family: "Titillium Web", sans-serif;
+          color: #818185;
+
+          border-bottom: .5px ridge #cac1c1;
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .add-to-cart-btn{
+          padding: 16px 32px;
+          background: #007580;
+          color: #fff;
+          border: 0;
+          font-size: 0.75em;
+          font-family: "Titillium Web", sans-serif;
+
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: .1em;
+          cursor: pointer;
+          margin-top: 1rem;
+
+          &:hover{
+            opacity: .8;
+          }
+        }
+
+        .product-description{
+          line-height: 1.6;
+          font-family: "schoolbook-web",Georgia,serif;
+          color: #646569;
+          font-weight: 400;
+        }
+
+        .sale-description{
+          line-height: 1.6;
+          font-family: "schoolbook-web",Georgia,serif;
+          color: #646569;
+          font-weight: 400;
+          border-bottom: 1px ridge #cac1c1;
+
+          padding-bottom: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .recomment{
+          border-radius: 3px;
+          padding: 5px;
+          cursor: pointer;
+          background:#417cf1;
+          border: 1px ridge #417cf1;
+          color: white;
+
+          &:hover{
+            opacity: .8;
+          }
+
+          &:focus{
+            border: 1px ridge #417cf1;
+            outline: none;
+          }
+
+          span{
+            margin-left: 5px;
+          }
+
+          .fa-facebook{
+            margin-right: 5px;
+            color: white;
+          }
+        }
+
+        .share{
+          margin-left: 1rem;
+          border-radius: 3px;
+          cursor: pointer;
+          background:#417cf1;
+          border: 1px ridge #417cf1;
+
+          padding: 5px;
+          color: white;
+
+          &:hover{
+            opacity: .8;
+          }
+
+          &:focus{
+            border: 1px ridge #417cf1;
+            outline: none;
+          }
+
+          .fa-share-square{
+            margin-right: 5px;
+          }
+
+          span{
+            margin-left: 5px;
+          }
+        }
+    }
+  }
+
+  .products-suggested{
+    margin: 2rem auto;
+    .products-suggested-title{
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-family: "Titillium Web", sans-serif;
+      color: #646569;
+      letter-spacing: .2rem;
+      text-align: center;
+    }
+    ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      .products-suggested-item{
+        list-style: none;
+        text-align: center;
+        max-width: 300px;
+        max-height: 400px;
+        cursor: pointer;
+
+        .product-suggest-title{
+          color: #007580;
+          font-family: "Titillium Web", sans-serif;
+          text-transform: uppercase;
+        }
+
+        .product-suggest-price{
+          color: #646569;
+          font-family: "Titillium Web", sans-serif;
+        }
+
+        #product-suggest0{
+          width: 272px;
+          height: 272px;  
+          display: inline-block;
+          background-size: cover;
+          background-position: center center;
+
+          .suggest-img{
+            width: 272px;
+            height: 272px;
+          }
+        }
+
+        #product-suggest1{
+          width: 272px;
+          height: 272px;
+          display: inline-block;
+          background-size: cover;
+          background-position: center center;
+
+          .suggest-img{
+            width: 272px;
+            height: 272px;
+          }
+        }
+
+        #product-suggest2{
+          width: 272px;
+          height: 272px;
+          display: inline-block;
+          background-size: cover;
+          background-position: center center;
+
+          .suggest-img{
+            width: 272px;
+            height: 272px;
+          }
+        }
+
+        #product-suggest3{
+          width: 272px;
+          height: 272px;
+          display: inline-block;
+          background-size: cover;
+          background-position: center center;
+
+          .suggest-img{
+            width: 272px;
+            height: 272px;
+          }
+        }
+
+        #product-suggest4{
+          width: 272px;
+          height: 272px;
+          display: inline-block;
+          background-size: cover;
+          background-position: center center;
+
+          .suggest-img{
+            width: 272px;
+            height: 272px;
+          }
+        }
+      }
+    }
+  }
+}

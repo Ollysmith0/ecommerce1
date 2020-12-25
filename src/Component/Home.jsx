@@ -1,18 +1,18 @@
-import Header from './Header/Header.jsx';
-import Content from './Content/Content.jsx';
-import Footer from './Footer/Footer.jsx';
+import Header from "./Header/Header.jsx";
+import Content from "./Content/Content.jsx";
+import Footer from "./Footer/Footer.jsx";
 
-import './Home.scss'
-import React from 'react';
+import "./Home.scss";
+import React from "react";
 
 const Home = (props) => {
-    return(
+  return (
     <>
-        <Header />
-        <Content />
-        <Footer />
+      <Header />
+      <Content />
+      <Footer />
     </>
-    )
-}
+  );
+};
 
-export default Home
+export default Home;
