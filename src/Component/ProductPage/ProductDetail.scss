@@ -26,14 +26,19 @@
         .img{
           max-width: 100%;
           cursor: pointer;
+          border: none;
+          margin-left: 5px;
 
           &:hover > img{
             opacity: .8;
           }
+
+          &:focus{
+            outline: none;
+          }
         }
         .knife5-img{
-          display: flex;
-          justify-content: center;
+          border: none;
         }
       }
     }

@@ -45,52 +45,52 @@ const ProductDetail = () => {
         <div className="product-detail-container">
           <div className="left-content">
             <div className="product-img">
-              <a href="/#" className="product-image">
+              <button className="product-image">
                 <img
                   src="//cdn.shopify.com/s/files/1/0156/0327/products/IMG_4571_1_1024x1024.jpg?v=1499307602"
                   alt="knife1"
                   className="image"
                   id="img-display"
                 />
-              </a>
+              </button>
             </div>
             <div className="product-imgs">
-              <a href="/#" className="img">
+              <button className="img">
                 <img
                   src="//cdn.shopify.com/s/files/1/0156/0327/products/IMG_4571_1_compact.jpg?v=1499307602"
                   alt="knife1"
                   id="knife1"
                 />
-              </a>
-              <a href="/#" className="img">
+              </button>
+              <button className="img">
                 <img
                   src="//cdn.shopify.com/s/files/1/0156/0327/products/fish.knife.b_compact.jpg?v=1474313324"
                   alt="knife2"
                   id="knife2"
                 />
-              </a>
-              <a href="/#" className="img">
+              </button>
+              <button className="img">
                 <img
                   src="//cdn.shopify.com/s/files/1/0156/0327/products/fish.knife.wood_compact.png?v=1474313324"
                   alt="knife3"
                   id="knife3"
                 />
-              </a>
-              <a href="/#" className="img">
+              </button>
+              <button className="img">
                 <img
                   src="//cdn.shopify.com/s/files/1/0156/0327/products/fish.knife_compact.jpg?v=1474313324"
                   alt="knife4"
                   id="knife4"
                 />
-              </a>
-              <a href="/#" className="img knife5-img">
+              </button>
+              <button className="img knife5-img">
                 <img
                   src="//cdn.shopify.com/s/files/1/0156/0327/products/IMG_4570_compact.jpg?v=1499307628"
                   alt="knife5"
                   className="knife5-img"
                   id="knife5"
                 />
-              </a>
+              </button>
             </div>
           </div>
           <div className="product-detail">
