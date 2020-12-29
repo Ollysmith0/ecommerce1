@@ -8,6 +8,7 @@
       .product-img{
         display: inline-block;
         width: 100%;
+        height: 600px;
         .product-image{
           background-image: 'https://cdn.shopify.com/s/files/1/0156/0327/products/IMG_4571_1_1024x1024.jpg?v=1499307602';
           width: 100%;
@@ -38,6 +39,7 @@
     }
 
     .product-detail{
+      margin-left: 1rem;
         .product-name{
           font-family: "Titillium Web", sans-serif;
           font-weight: 400;
