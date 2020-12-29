@@ -45,7 +45,7 @@ const ProductDetail = () => {
         <div className="product-detail-container">
           <div className="left-content">
             <div className="product-img">
-              <a href="#" className="product-image">
+              <a href="/#" className="product-image">
                 <img
                   src="//cdn.shopify.com/s/files/1/0156/0327/products/IMG_4571_1_1024x1024.jpg?v=1499307602"
                   alt="knife1"
