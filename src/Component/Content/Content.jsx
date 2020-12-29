@@ -118,45 +118,45 @@ const Content = () => {
               <a href="/about">About Us</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="/#">Blog</a>
             </li>
             <li>
-              <a href="#">Shipping</a>
+              <a href="/#">Shipping</a>
             </li>
             <li>
-              <a href="#">Term</a>
+              <a href="/#">Term</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <a href="/#">Privacy</a>
             </li>
             <li>
-              <a href="#">Return</a>
+              <a href="/#">Return</a>
             </li>
           </ul>
           <h4 className="side__bar__tag">TAGS</h4>
           <ul className="side-bar-items">
             <li>
-              <a className="tag-item" href="#">
+              <a className="tag-item" href="/#">
                 ALL INVENTORY
               </a>
             </li>
             <li>
-              <a className="tag-item" href="#">
+              <a className="tag-item" href="/#">
                 BEST SELLER
               </a>
             </li>
             <li>
-              <a className="tag-item" href="#">
+              <a className="tag-item" href="/#">
                 CAMP
               </a>
             </li>
             <li>
-              <a className="tag-item" href="#">
+              <a className="tag-item" href="/#">
                 CLOTHING & ACCESSORIES
               </a>
             </li>
             <li>
-              <a className="tag-item" href="#">
+              <a className="tag-item" href="/#">
                 GEAR
               </a>
             </li>
@@ -217,13 +217,13 @@ const Content = () => {
             })}
             <div className="pagination-item">
               <button className="page-item">
-                <a href="#">1</a>
+                <a href="/#">1</a>
               </button>
               <button className="page-item">
-                <a href="#">2</a>
+                <a href="/#">2</a>
               </button>
               <button className="page-item">
-                <a href="#">
+                <a href="/#">
                   <i className="fas fa-arrow-right"></i>
                 </a>
               </button>

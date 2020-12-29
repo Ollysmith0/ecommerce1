@@ -66,22 +66,22 @@ const Footer = () => {
               <h1 className="Links-title">links</h1>
               <ul>
                 <li>
-                  <a href="#">Shop</a>
+                  <a href="/#">Shop</a>
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <a href="/#">About Us</a>
                 </li>
                 <li>
-                  <a href="#">Shipping</a>
+                  <a href="/#">Shipping</a>
                 </li>
                 <li>
-                  <a href="#">Terms</a>
+                  <a href="/#">Terms</a>
                 </li>
                 <li>
-                  <a href="#">Privacy</a>
+                  <a href="/#">Privacy</a>
                 </li>
                 <li>
-                  <a href="#">Returns</a>
+                  <a href="/#">Returns</a>
                 </li>
               </ul>
             </div>
@@ -96,22 +96,22 @@ const Footer = () => {
               <div className="social-media-contact">
                 <ul className="social-items">
                   <li>
-                    <a href="#">
+                    <a href="/#">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="/#">
                       <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="/#">
                       <i className="fab fa-pinterest-p"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="/#">
                       <i className="fab fa-twitter"></i>
                     </a>
                   </li>
@@ -128,13 +128,13 @@ const Footer = () => {
             <span className="copy-right-title">
               {" "}
               2020,{" "}
-              <a href="#" className="site">
+              <a href="/#" className="site">
                 Humble Lumber
               </a>
             </span>
             <span className="copy-right-desc">
               Site by{" "}
-              <a href="#" className="desc">
+              <a href="/#" className="desc">
                 Olly Smith
               </a>
             </span>

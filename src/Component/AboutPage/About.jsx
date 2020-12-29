@@ -142,85 +142,85 @@ const About = () => {
           </div>
           <div className="cooporation">
             <h4 className="cooporation-title">as seen on</h4>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/01-MidwestLiving.png?v=1473194837"
                 alt="midwest"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/02-MensJournal.png?v=1473194856"
                 alt="mens"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/03-Uncrate.png?v=1473194872"
                 alt="uncrate"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/04-Esquire.png?v=1473194886"
                 alt="esquire"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/05-BuzzFeed.png?v=1473194902"
                 alt="BuzzFeed"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/06-Huckberry.png?v=1473194919"
                 alt="HurryBerry"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/07-Outside.png?765027274779505235"
                 alt="outside"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/08-UrbanDaddy.png?v=1473194950"
                 alt="urbandaddy"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/09-SouthernLiving.png?v=1473194966"
                 alt="sounthernliving"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/10-TheChive.png?v=1473194983"
                 alt="theChive"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/11-CountryLiving.png?v=1473195000"
                 alt="countryliving"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/12-CoolHunting.png?v=1473195015"
                 alt="coolhunting"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/13-Bespoke.png?v=1473195035"
                 alt="bespoke"
               />
             </a>
-            <a className="logo-coop" href="#">
+            <a className="logo-coop" href="/#">
               <img
                 src="https://cdn.shopify.com/s/files/1/0156/0327/files/14-UrbanOutfitters.png?v=1473195049"
                 alt="urbanoutfitters"
